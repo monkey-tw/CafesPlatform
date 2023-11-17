@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		B22447652B06EF75001E2BEB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22447642B06EF75001E2BEB /* MainViewController.swift */; };
+		B22447742B06F3F0001E2BEB /* Integration in Frameworks */ = {isa = PBXBuildFile; productRef = B22447732B06F3F0001E2BEB /* Integration */; };
 		B226F4042B061AD300E10F63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B226F4032B061AD300E10F63 /* AppDelegate.swift */; };
 		B226F4062B061AD300E10F63 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B226F4052B061AD300E10F63 /* SceneDelegate.swift */; };
 		B226F4082B061AD300E10F63 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B226F4072B061AD300E10F63 /* ViewController.swift */; };
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B22447742B06F3F0001E2BEB /* Integration in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -183,6 +185,9 @@
 			dependencies = (
 			);
 			name = CafesPlatform;
+			packageProductDependencies = (
+				B22447732B06F3F0001E2BEB /* Integration */,
+			);
 			productName = CafesPlatform;
 			productReference = B226F4002B061AD300E10F63 /* CafesPlatform.app */;
 			productType = "com.apple.product-type.application";
@@ -255,6 +260,9 @@
 				Base,
 			);
 			mainGroup = B226F3F72B061AD300E10F63;
+			packageReferences = (
+				B22447722B06F3F0001E2BEB /* XCLocalSwiftPackageReference "CafesPlatform/Packages/Integration" */,
+			);
 			productRefGroup = B226F4012B061AD300E10F63 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -633,6 +641,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		B22447722B06F3F0001E2BEB /* XCLocalSwiftPackageReference "CafesPlatform/Packages/Integration" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = CafesPlatform/Packages/Integration;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B22447732B06F3F0001E2BEB /* Integration */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Integration;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B226F3F82B061AD300E10F63 /* Project object */;
 }

@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Integration
+import NetworkTool
 
 class MainViewController: UIViewController {
 
@@ -16,6 +18,8 @@ class MainViewController: UIViewController {
         self.title = "哈哈"
         
         self.view.backgroundColor = .white
+        NetworkTool.testTool()
+        NetworkTool.testHappy()
     }
     
 
