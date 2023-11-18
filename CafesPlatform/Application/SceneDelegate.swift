@@ -19,11 +19,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         guard let windowScene = (scene as? UIWindowScene) else { return }
         
         let window = UIWindow(windowScene: windowScene)
-        let timeline = MainViewController()
-        
-        let navigation = UINavigationController(rootViewController: timeline)
-        window.rootViewController = navigation
-        
+        let application = Application()
+        application.configureMainPage(in: window)
         self.window = window
         window.makeKeyAndVisible()
         
