@@ -24,11 +24,18 @@
 		B22447982B08EA91001E2BEB /* JoinDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22447972B08EA91001E2BEB /* JoinDetailViewController.swift */; };
 		B224479C2B08EAF4001E2BEB /* MineMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B224479B2B08EAF4001E2BEB /* MineMainViewController.swift */; };
 		B224479E2B08EB47001E2BEB /* JoinDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B224479D2B08EB47001E2BEB /* JoinDetailViewModel.swift */; };
+		B22447A42B09B204001E2BEB /* ApplyJoinUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22447A32B09B204001E2BEB /* ApplyJoinUseCaseTests.swift */; };
+		B22447A72B09B35F001E2BEB /* MockJoinRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22447A62B09B35F001E2BEB /* MockJoinRepository.swift */; };
+		B22447A92B09B875001E2BEB /* StandardJoinRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22447A82B09B875001E2BEB /* StandardJoinRepository.swift */; };
+		B22447AB2B09B8D5001E2BEB /* MockApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22447AA2B09B8D5001E2BEB /* MockApiClient.swift */; };
+		B22447AD2B09BC49001E2BEB /* JoinRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22447AC2B09BC49001E2BEB /* JoinRepositoryTests.swift */; };
+		B22447AF2B09BE68001E2BEB /* JoinMainViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22447AE2B09BE68001E2BEB /* JoinMainViewModelTests.swift */; };
+		B22447B12B09BEA6001E2BEB /* MockJoinNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22447B02B09BEA6001E2BEB /* MockJoinNavigator.swift */; };
+		B22447B32B09BF47001E2BEB /* MockApplyJoinUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22447B22B09BF47001E2BEB /* MockApplyJoinUseCase.swift */; };
 		B226F4042B061AD300E10F63 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B226F4032B061AD300E10F63 /* AppDelegate.swift */; };
 		B226F4062B061AD300E10F63 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B226F4052B061AD300E10F63 /* SceneDelegate.swift */; };
 		B226F40D2B061AD900E10F63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B226F40C2B061AD900E10F63 /* Assets.xcassets */; };
 		B226F4102B061AD900E10F63 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B226F40E2B061AD900E10F63 /* LaunchScreen.storyboard */; };
-		B226F41B2B061AD900E10F63 /* CafesPlatformTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B226F41A2B061AD900E10F63 /* CafesPlatformTests.swift */; };
 		B226F4252B061AD900E10F63 /* CafesPlatformUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B226F4242B061AD900E10F63 /* CafesPlatformUITests.swift */; };
 		B226F4272B061ADA00E10F63 /* CafesPlatformUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B226F4262B061ADA00E10F63 /* CafesPlatformUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
@@ -67,6 +74,15 @@
 		B22447972B08EA91001E2BEB /* JoinDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinDetailViewController.swift; sourceTree = "<group>"; };
 		B224479B2B08EAF4001E2BEB /* MineMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MineMainViewController.swift; sourceTree = "<group>"; };
 		B224479D2B08EB47001E2BEB /* JoinDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinDetailViewModel.swift; sourceTree = "<group>"; };
+		B22447A22B09B204001E2BEB /* CafesPlatformTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CafesPlatformTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		B22447A32B09B204001E2BEB /* ApplyJoinUseCaseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplyJoinUseCaseTests.swift; sourceTree = "<group>"; };
+		B22447A62B09B35F001E2BEB /* MockJoinRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockJoinRepository.swift; sourceTree = "<group>"; };
+		B22447A82B09B875001E2BEB /* StandardJoinRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardJoinRepository.swift; sourceTree = "<group>"; };
+		B22447AA2B09B8D5001E2BEB /* MockApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockApiClient.swift; sourceTree = "<group>"; };
+		B22447AC2B09BC49001E2BEB /* JoinRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinRepositoryTests.swift; sourceTree = "<group>"; };
+		B22447AE2B09BE68001E2BEB /* JoinMainViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinMainViewModelTests.swift; sourceTree = "<group>"; };
+		B22447B02B09BEA6001E2BEB /* MockJoinNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockJoinNavigator.swift; sourceTree = "<group>"; };
+		B22447B22B09BF47001E2BEB /* MockApplyJoinUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockApplyJoinUseCase.swift; sourceTree = "<group>"; };
 		B226F4002B061AD300E10F63 /* CafesPlatform.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CafesPlatform.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B226F4032B061AD300E10F63 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B226F4052B061AD300E10F63 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,7 +90,6 @@
 		B226F40F2B061AD900E10F63 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B226F4112B061AD900E10F63 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B226F4162B061AD900E10F63 /* CafesPlatformTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CafesPlatformTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		B226F41A2B061AD900E10F63 /* CafesPlatformTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafesPlatformTests.swift; sourceTree = "<group>"; };
 		B226F4202B061AD900E10F63 /* CafesPlatformUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CafesPlatformUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B226F4242B061AD900E10F63 /* CafesPlatformUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafesPlatformUITests.swift; sourceTree = "<group>"; };
 		B226F4262B061ADA00E10F63 /* CafesPlatformUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CafesPlatformUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -190,6 +205,7 @@
 		B22447822B085361001E2BEB /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
+				B22447A82B09B875001E2BEB /* StandardJoinRepository.swift */,
 			);
 			path = Repositories;
 			sourceTree = "<group>";
@@ -228,6 +244,42 @@
 			path = VIew;
 			sourceTree = "<group>";
 		};
+		B224479F2B08F951001E2BEB /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				B22447A32B09B204001E2BEB /* ApplyJoinUseCaseTests.swift */,
+				B22447A22B09B204001E2BEB /* CafesPlatformTests-Bridging-Header.h */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		B22447A02B08F95B001E2BEB /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B22447AC2B09BC49001E2BEB /* JoinRepositoryTests.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		B22447A12B08F960001E2BEB /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				B22447AE2B09BE68001E2BEB /* JoinMainViewModelTests.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		B22447A52B09B29A001E2BEB /* Doubles */ = {
+			isa = PBXGroup;
+			children = (
+				B22447A62B09B35F001E2BEB /* MockJoinRepository.swift */,
+				B22447AA2B09B8D5001E2BEB /* MockApiClient.swift */,
+				B22447B02B09BEA6001E2BEB /* MockJoinNavigator.swift */,
+				B22447B22B09BF47001E2BEB /* MockApplyJoinUseCase.swift */,
+			);
+			path = Doubles;
+			sourceTree = "<group>";
+		};
 		B226F3F72B061AD300E10F63 = {
 			isa = PBXGroup;
 			children = (
@@ -263,7 +315,10 @@
 		B226F4192B061AD900E10F63 /* CafesPlatformTests */ = {
 			isa = PBXGroup;
 			children = (
-				B226F41A2B061AD900E10F63 /* CafesPlatformTests.swift */,
+				B22447A52B09B29A001E2BEB /* Doubles */,
+				B22447A12B08F960001E2BEB /* Scenes */,
+				B22447A02B08F95B001E2BEB /* Data */,
+				B224479F2B08F951001E2BEB /* Domain */,
 			);
 			path = CafesPlatformTests;
 			sourceTree = "<group>";
@@ -373,6 +428,7 @@
 					};
 					B226F4152B061AD900E10F63 = {
 						CreatedOnToolsVersion = 15.0;
+						LastSwiftMigration = 1500;
 						TestTargetID = B226F3FF2B061AD300E10F63;
 					};
 					B226F41F2B061AD900E10F63 = {
@@ -450,6 +506,7 @@
 				B22447842B0853AD001E2BEB /* JoinMainViewModel.swift in Sources */,
 				B22447982B08EA91001E2BEB /* JoinDetailViewController.swift in Sources */,
 				B22447942B08E81B001E2BEB /* JoinResultModel.swift in Sources */,
+				B22447A92B09B875001E2BEB /* StandardJoinRepository.swift in Sources */,
 				B224477A2B06F996001E2BEB /* AppConfiguration.swift in Sources */,
 				B22447652B06EF75001E2BEB /* JoinMainViewController.swift in Sources */,
 				B224478A2B085424001E2BEB /* JoinResultEntity.swift in Sources */,
@@ -460,7 +517,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B226F41B2B061AD900E10F63 /* CafesPlatformTests.swift in Sources */,
+				B22447AB2B09B8D5001E2BEB /* MockApiClient.swift in Sources */,
+				B22447A42B09B204001E2BEB /* ApplyJoinUseCaseTests.swift in Sources */,
+				B22447AF2B09BE68001E2BEB /* JoinMainViewModelTests.swift in Sources */,
+				B22447B32B09BF47001E2BEB /* MockApplyJoinUseCase.swift in Sources */,
+				B22447A72B09B35F001E2BEB /* MockJoinRepository.swift in Sources */,
+				B22447AD2B09BC49001E2BEB /* JoinRepositoryTests.swift in Sources */,
+				B22447B12B09BEA6001E2BEB /* MockJoinNavigator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -678,14 +741,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.monkey.CafesPlatformTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "CafesPlatformTests/Domain/CafesPlatformTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CafesPlatform.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CafesPlatform";
@@ -697,14 +763,16 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.monkey.CafesPlatformTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "CafesPlatformTests/Domain/CafesPlatformTests-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CafesPlatform.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/CafesPlatform";
