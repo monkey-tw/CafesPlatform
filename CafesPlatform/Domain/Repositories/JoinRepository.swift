@@ -10,7 +10,7 @@ import RxSwift
 import NetworkTool
 
 protocol JoinRepository {
-    func applyJoin() -> Observable<Result<JoinResultEntity, HttpError>>
+    func applyJoin() -> Observable<JoinResultEntity>
 }
 
 

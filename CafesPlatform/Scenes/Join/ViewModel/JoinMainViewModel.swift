@@ -8,6 +8,7 @@
 import Foundation
 import Common
 import RxCocoa
+import RxSwift
 import NetworkTool
 
 final class JoinMainViewModel: ViewModelType {
@@ -28,21 +29,23 @@ final class JoinMainViewModel: ViewModelType {
     }
     
     func transform(input: Input) -> Output {
+        
         let applyJoinResult = input.join.flatMapLatest {
-            return self.useCase
+            let test = self.useCase
                 .applyJoin()
                 .map { result in
-                    switch result {
-                    case .success(let success):
-                        let model = JoinMapper.map(success)
-                        self.resultModel = model
-                        return Result<JoinResultModel, HttpError>.success(model)
-                    case .failure(let failure):
-                        return Result<JoinResultModel, HttpError>.failure(failure)
-                    }
-            }.asDriver(onErrorJustReturn: .failure(.serverError))
+                    let model = JoinMapper.map(result)
+                    self.resultModel = model
+                    return Result<JoinResultModel, HttpError>.success(model)
+                }.asDriver(onErrorJustReturn: .failure(HttpError.serverError))
+//                .catch { error in
+//                    Driver.just(Result<JoinResultModel, HttpError>.failure(HttpError.serverError))
+//                }
+            return test
         }
         
+        
+    
         let output = Output(joinResult: applyJoinResult)
         return output
     }
@@ -50,5 +53,24 @@ final class JoinMainViewModel: ViewModelType {
     func showJoinDetail() {
         guard let model = resultModel else { return }
         navigator.showJoinDetail(model)
+    }
+}
+
+extension ObservableType {
+    
+    func catchErrorJustComplete() -> Observable<Element> {
+        return catchError { _ in
+            return Observable.empty()
+        }
+    }
+    
+    func asDriverOnErrorJustComplete() -> Driver<Element> {
+        return asDriver { error in
+            return Driver.empty()
+        }
+    }
+    
+    func mapToVoid() -> Observable<Void> {
+        return map { _ in }
     }
 }

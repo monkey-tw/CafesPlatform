@@ -13,7 +13,7 @@ import RxSwift
 class MockJoinRepository: JoinRepository {
     var result: Result<JoinResultEntity, HttpError> = .success(.mock)
     
-    func applyJoin() -> Observable<Result<JoinResultEntity, HttpError>> {
+    func applyJoin() -> Observable<JoinResultEntity> {
         return .just(result)
     }
 }

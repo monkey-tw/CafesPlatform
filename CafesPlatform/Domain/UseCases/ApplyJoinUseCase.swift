@@ -10,7 +10,7 @@ import RxSwift
 import NetworkTool
 
 protocol ApplyJoinUseCase {
-    func applyJoin() -> Observable<Result<JoinResultEntity, HttpError>>
+    func applyJoin() -> Observable<JoinResultEntity>
 }
 
 class StandardApplyJoinUseCase: ApplyJoinUseCase {
@@ -20,7 +20,7 @@ class StandardApplyJoinUseCase: ApplyJoinUseCase {
         self.repository = repository
     }
     
-    func applyJoin() -> Observable<Result<JoinResultEntity, HttpError>> {
+    func applyJoin() -> Observable<JoinResultEntity> {
         repository.applyJoin()
     }
 }

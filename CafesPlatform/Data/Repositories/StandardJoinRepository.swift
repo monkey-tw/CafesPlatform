@@ -15,7 +15,7 @@ class StandardJoinRepository: JoinRepository {
         self.apiClient = apiClient
     }
     
-    func applyJoin() -> Observable<Result<JoinResultEntity, HttpError>> {
+    func applyJoin() -> Observable<JoinResultEntity> {
         let endpoint = StandardApiEndpoint(method: .post, path: "applyJoin", headers: nil, params: nil)
         return apiClient.request(endpoint)
     }

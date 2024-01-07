@@ -14,13 +14,13 @@ class MockApiClient: ApiClient {
     var jsonData: Data?
     var apiError: HttpError?
     
-    func request<T: Decodable>(_ endpoint: ApiEndpoint) -> Observable<Result<T, HttpError>> {
+    func request<T: Decodable>(_ endpoint: ApiEndpoint) -> Observable<T> {
         if let jsonData, let result = try? JSONDecoder().decode(T.self, from: jsonData) {
-            return .just(.success(result))
+            return .just(result)
         } else if let apiError {
-            return .just(.failure(apiError))
+            return .error(apiError)
         } else {
-            return .just(.failure(.serverError))
+            return .error(HttpError.serverError)
         }
     }
 }

@@ -10,7 +10,7 @@ public enum HttpError: Error {
 }
 
 public protocol ApiClient {
-    func request<T: Decodable>(_ endpoint: ApiEndpoint) -> Observable<Result<T, HttpError>>
+    func request<T: Decodable>(_ endpoint: ApiEndpoint) -> Observable<T>
 }
 
 public class StandardApiClient: ApiClient {
@@ -19,20 +19,21 @@ public class StandardApiClient: ApiClient {
         self.baseUrl = baseUrl
     }
     
-    public func request<T: Decodable>(_ endpoint: ApiEndpoint) -> Observable<Result<T, HttpError>> {
+    public func request<T: Decodable>(_ endpoint: ApiEndpoint) -> Observable<T> {
         return .create { observer in
             do {
                 //实际项目就通过baseUrl、endPoint进行bff接口请求，该example直接通过本地json返回数据
                 if let path = Bundle.module.path(forResource: "join", ofType: "json") {
                     let data = try Data(contentsOf: URL(fileURLWithPath: path))
                     let wrapper = try JSONDecoder().decode(ResponseWrapper<T>.self, from: data)
-                    observer.onNext(.success(wrapper.data))
-                    observer.onCompleted()
+//                    observer.onNext(wrapper.data)
+//                    observer.onCompleted()
+                    observer.onError(HttpError.invalidDataError(nil))
                 } else {
-                    observer.onNext(.failure(.invalidDataError(nil)))
+                    observer.onError(HttpError.invalidDataError(nil))
                 }
             } catch {
-                observer.onNext(.failure(.invalidDataError(error)))
+                observer.onError(HttpError.invalidDataError(error))
             }
             return Disposables.create([])
         }.delay(.seconds(2), scheduler: MainScheduler.asyncInstance)
